@@ -1,0 +1,82 @@
+{
+  "profile": {
+    "companyName": "Bergmann Tools GmbH",
+    "industry": "Industrial automation",
+    "hq": "Stuttgart, Germany",
+    "revenueBand": "€10M–€50M",
+    "targetMarket": "Indonesia",
+    "expansionGoals": [
+      "Secure two distributor partnerships in Java within 6 months",
+      "Pilot warehouse automation with one Indonesian manufacturer",
+      "Establish local service footprint with certified technicians"
+    ],
+    "differentiators": [
+      "Modular conveyor systems tuned for tropical climates",
+      "Energy-efficient retrofit kits for legacy factory lines"
+    ]
+  },
+  "leads": [
+    {
+      "id": "lead-01",
+      "companyName": "Nusantara Robotics",
+      "sector": "Factory automation",
+      "city": "Bekasi",
+      "matchScore": 91,
+      "rationale": "Distributor with existing German OEM portfolio and strong Java coverage",
+      "signals": ["Headcount growth in service technicians", "Recent ISO 9001 recertification"],
+      "contact": {
+        "name": "Aditya Santoso",
+        "title": "Director of Partnerships",
+        "email": "partner-demo+01@example.com"
+      }
+    },
+    {
+      "id": "lead-02",
+      "companyName": "Surya Logistics",
+      "sector": "Warehousing and distribution",
+      "city": "Surabaya",
+      "matchScore": 84,
+      "rationale": "Expanding cold-chain network; seeking automation to reduce energy spend",
+      "signals": ["New depot announced in Gresik", "Hiring spree for regional ops managers"],
+      "contact": {
+        "name": "Dewi Putri",
+        "title": "Head of Supply Chain",
+        "email": "partner-demo+02@example.com"
+      }
+    },
+    {
+      "id": "lead-03",
+      "companyName": "Makassar Marine Systems",
+      "sector": "Port operations",
+      "city": "Makassar",
+      "matchScore": 77,
+      "rationale": "Wants turnkey conveyor upgrades for bulk materials; values European standards",
+      "signals": ["Awarded port efficiency grant", "Press coverage on sustainability targets"],
+      "contact": {
+        "name": "Rahmat Karim",
+        "title": "Procurement Lead",
+        "email": "partner-demo+03@example.com"
+      }
+    }
+  ],
+  "drafts": [
+    {
+      "leadId": "lead-01",
+      "subject": "Exploring automation fit for your Java operations",
+      "tone": "Formal, collaborative",
+      "summary": "Introduces Bergmann Tools, references Nusantara Robotics' German OEM experience, and proposes a pilot on a high-throughput line with shared KPIs."
+    },
+    {
+      "leadId": "lead-02",
+      "subject": "Energy-efficient conveyor retrofits for Surabaya expansion",
+      "tone": "Confident, concise",
+      "summary": "Links Surya Logistics' new depot plan to modular retrofits that cut energy use and downtime; offers a workshop in Bahasa/English with local technician training."
+    },
+    {
+      "leadId": "lead-03",
+      "subject": "Port-ready conveyor upgrades aligned to European safety standards",
+      "tone": "Respectful, detail-forward",
+      "summary": "Acknowledges sustainability targets, outlines phased upgrades for bulk handling, and proposes a remote assessment before on-site scoping."
+    }
+  ]
+}

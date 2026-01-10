@@ -1,0 +1,4 @@
+rank,lead_id,company,sector,city,score,risk,opportunity
+1,lead-01,Nusantara Robotics,Factory automation,Bekasi,91,"Reliance on a few German OEM lines; ensure service SLA","Distributor fit with Java coverage; existing German OEM relationships"
+2,lead-02,Surya Logistics,Warehousing and distribution,Surabaya,84,"Energy costs rising; integration with legacy WMS needed","Cold-chain expansion; openness to automation to cut energy spend"
+3,lead-03,Makassar Marine Systems,Port operations,Makassar,77,"Port upgrades depend on grant timing","Wants European-standard upgrades; sustainability targets align with retrofits"

@@ -1,0 +1,16 @@
+Draft summaries for demo (aligns with `mock-data/sample-data.json`):
+
+Lead: Nusantara Robotics (lead-01)
+- Subject: Exploring automation fit for your Java operations
+- Tone: Formal, collaborative
+- Body (abridged): Introduces Bergmann Tools; references Nusantara Robotics' German OEM experience; proposes a pilot on a high-throughput line with shared KPIs; offers bilingual workshop.
+
+Lead: Surya Logistics (lead-02)
+- Subject: Energy-efficient conveyor retrofits for Surabaya expansion
+- Tone: Confident, concise
+- Body (abridged): Links new depot plan to modular retrofits that cut energy use and downtime; suggests a short assessment plus technician training; provides sample KPIs (uptime, energy per pallet).
+
+Lead: Makassar Marine Systems (lead-03)
+- Subject: Port-ready conveyor upgrades aligned to European safety standards
+- Tone: Respectful, detail-forward
+- Body (abridged): Acknowledges sustainability targets; outlines phased upgrades for bulk handling; proposes remote assessment then on-site scoping; notes alignment with EU safety norms.

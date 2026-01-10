@@ -1,0 +1,4 @@
+Graph snapshot guidance (use mock data only):
+- Nodes: Bergmann Tools (profile), three leads (Nusantara Robotics, Surya Logistics, Makassar Marine Systems), and two market signals per lead.
+- Edges: profile -> each lead (compatibility weight), lead -> signals (evidence), optional lead -> lead (shared suppliers).
+- When exporting the image, hide any IDs or URLs; use clear labels only.
