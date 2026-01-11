@@ -1,0 +1,8 @@
+%% Upload, signed URL, and processing flow
+flowchart LR
+    Client[Web app] -- /api/leads/upload-url --> API[Functions]
+    API -- Signed URL --> Client
+    Client -- PUT file --> Storage[Cloud Storage uploads/]
+    Storage -- processUpload --> Processor[Function trigger]
+    Processor --> Firestore[(Firestore leads)]
+    Firestore --> UI[UI recommendations]

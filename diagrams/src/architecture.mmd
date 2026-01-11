@@ -1,0 +1,21 @@
+%% Firebase-hosted static Next.js + Functions overview
+flowchart TD
+    User["User browser"]
+    Hosting["Firebase Hosting static export"]
+    Auth["Firebase Auth"]
+    Api["Firebase Functions Express"]
+    Firestore["Firestore: profiles, leads, drafts, gmailTokens"]
+    Storage["Cloud Storage: uploads/user/file"]
+    Processor["processUpload function"]
+    Gemini["Gemini API"]
+    Gmail["Gmail API optional send"]
+
+    User -->|GET /launchkey| Hosting
+    User -->|Firebase Auth anon/demo| Auth
+    User -->|ID token calls /api/**| Api
+    Api -->|read/write| Firestore
+    Api -->|upload URLs| Storage
+    Storage -->|processUpload trigger| Processor
+    Processor --> Firestore
+    Api --> Gemini
+    Api --> Gmail

@@ -1,0 +1,17 @@
+%% Firestore collection relationships (cardinalities omitted for slides)
+flowchart LR
+    PROFILE["PROFILE"]
+    LEADUPLOAD["LEADUPLOAD"]
+    LEAD["LEAD"]
+    BUSINESS["BUSINESS"]
+    DRAFT["DRAFT"]
+    GMAILTOKEN["GMAILTOKEN"]
+
+    PROFILE -->|user uploads files| LEADUPLOAD
+    LEADUPLOAD -->|processUpload expands| LEAD
+    PROFILE -->|recommendation input| LEAD
+    PROFILE -->|user portfolio companies| BUSINESS
+    BUSINESS -->|leads linked to business| LEAD
+    LEAD -->|drafts per lead| DRAFT
+    PROFILE -->|drafts per user| DRAFT
+    PROFILE -->|OAuth token| GMAILTOKEN

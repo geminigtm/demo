@@ -1,0 +1,29 @@
+%% End-to-end request lifecycle for demos
+sequenceDiagram
+    participant U as Browser
+    participant H as Firebase Hosting
+    participant A as Firebase Auth
+    participant F as Firebase Functions (/api)
+    participant FS as Firestore
+    participant ST as Cloud Storage
+    participant G as Gemini
+    participant M as Gmail
+
+    U->>H: Load /launchkey (static export)
+    U->>A: Anonymous sign-in (demo)
+    A-->>U: ID token
+    U->>F: /api/profiles (ID token)
+    F->>FS: create/read profile
+    U->>F: /api/leads/upload-url
+    F-->>U: Signed URL
+    U->>ST: Upload CSV/JSON
+    ST-->>F: processUpload trigger
+    F->>FS: Upsert leads
+    U->>F: /api/drafts (lead IDs)
+    F->>G: Draft generation
+    G-->>F: Drafts
+    F->>FS: Store emailDrafts
+    U->>F: /api/send (optional)
+    F->>FS: Read gmailTokens (if configured)
+    F->>M: Send via OAuth token
+    Note over U,F: /api/send uses UI draft payload\nemailDrafts stored for history only

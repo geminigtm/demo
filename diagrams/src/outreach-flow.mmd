@@ -1,0 +1,19 @@
+%% Draft generation and send workflow
+flowchart LR
+    UI["UI selections"]
+    Drafts["/api/drafts Functions"]
+    Gemini["Gemini models"]
+    DraftStore["Firestore emailDrafts"]
+    Send["/api/send Functions"]
+    Token["Firestore gmailTokens"]
+    Gmail["Gmail API (OAuth)"]
+
+    UI --> Drafts
+    Drafts --> Gemini
+    Gemini --> DraftStore
+    UI -->|choose/edit draft| DraftStore
+    UI --> Send
+    Send --> Token
+    Send --> Gmail
+    Info["Send uses UI draft payload; reads gmailTokens when available"]
+    Send -.-> Info
