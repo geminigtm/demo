@@ -1,5 +1,10 @@
 # Public Demo Package
 
+<!-- portfolio-status -->
+## Project Status
+
+LaunchKey is preserved as a hackathon case study. The original Firebase deployment has been retired. The architecture and deployment sections document the system built for the event; reproduction requires a new cloud project and new credentials.
+
 This folder is shared openly to explain the cross-border partner-matching experience using synthetic, non-sensitive materials. It contains narrative/context and diagrams only—no code, no sample data, no screenshots, and no other generated artifacts.
 
 ## Scenario and feature story
