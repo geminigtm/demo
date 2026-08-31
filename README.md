@@ -1,9 +1,8 @@
-# Public Demo Package
+# LaunchKey Technical Case Study
 
-<!-- portfolio-status -->
-> Built for the Gemini Hackathon. The hosted demo is no longer available. This repository documents the architecture using synthetic examples.
+LaunchKey is an AI-assisted cross-border partner discovery concept built for the Gemini Hackathon.
 
-This folder is shared openly to explain the cross-border partner-matching experience using synthetic, non-sensitive materials. It contains narrative/context and diagrams only—no code, no sample data, no screenshots, and no other generated artifacts.
+This repository explains the experience using synthetic, non-sensitive materials. It contains narrative documentation, architecture diagrams, and synthetic artifacts; application source and production data are not included.
 
 ## Scenario and feature story
 - Audience: German mid-market company expanding into Indonesia.
@@ -23,10 +22,10 @@ This folder is shared openly to explain the cross-border partner-matching experi
 - Outreach drafts: lead id, subject, tone, brief summary aligned to cultural context. Appears in multi-draft outreach selections.
 
 ## Scope reiteration
-- Included: descriptive narrative of flows, high-level data schema expectations, diagrams, license notes for design assets.
-- Excluded: app source, prompts, configs, sample data, artifacts, screenshots, or any production identifiers.
-- Self-contained: this folder alone is intended for open-source sharing; no external directories are required.
-- Bring your own synthetic inputs if you recreate captures; this package does not distribute data or media.
+- Included: descriptive flows, high-level data schemas, architecture diagrams, and synthetic recommendation and outreach artifacts.
+- Excluded: application source, prompts, configuration, production data, and production identifiers.
+- Self-contained: the repository is intended for open sharing and does not require access to private project directories.
+- Synthetic only: examples are illustrative and do not represent real companies, contacts, or production activity.
 
 ## Architecture snapshot (no code)
 - Client/UI: Next.js (App Router) exported statically to CDN/Hosting; fetches dynamic data via `/api/**`.
